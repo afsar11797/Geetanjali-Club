@@ -1,0 +1,53 @@
+.admission {
+    padding: 3em 0;
+    position: relative;
+    background-color: #f2f5e1;
+}
+
+.admission .admission__title {
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 0.75em;
+}
+
+.admission .admission__form {
+    width: min(600px, 90%);
+    margin: 0 auto;
+    background-color: #BDC4A7;
+    border-radius: 5px;
+    padding: 1em 0;
+}
+
+.admission .admission__form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding: 2em;
+}
+
+.admission .admission__form form div.full {
+    grid-column: 1 / 3;
+}
+
+.admission .admission__form form div label span, input {
+    display: block;
+}
+
+.admission .admission__form form div label span {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.admission .admission__form form div label input {
+    padding: 0.3em 0.5em;
+    background-color: #d5d8cd;
+    border: 1px solid #8a8f7f;
+    border-radius: 4px;
+}
+
+.admission .admission__form form div.full input {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5em 1.25em;
+    cursor: pointer;
+}

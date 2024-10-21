@@ -1,0 +1,39 @@
+.about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    background-color: #f2f5e1;
+}
+
+.about-us__container{
+    height: 550px;
+    width: 500px;
+}
+.about-us__container img{
+    padding: 10px 20px 30px 40px;
+    height: 400px;
+    width: 400px;
+}
+.about-us__container h2{
+    text-align: center;
+}
+.about-us__container p{
+    text-align: center;
+}
+
+@media (max-width:500px){
+    .about-us{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us__container{
+        height: auto;
+        width: auto;
+    }
+    .about-us__container img{
+
+    left: 36px;
+    position: relative;
+    }
+}

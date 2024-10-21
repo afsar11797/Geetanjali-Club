@@ -1,0 +1,36 @@
+.courses {
+    padding: 3em 0;
+    position: relative;
+    background-color: #f2f5e1;
+}
+
+.courses .courses__title {
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 0.75em;
+}
+
+.courses .courses__categories {
+    padding-left: 2em;
+}
+
+.courses .courses__categories details {
+    margin-bottom: 2em;
+}
+
+.courses .courses__categories summary {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #2F2F2F;
+    margin-bottom: 0.5em;
+}
+
+.courses .courses__categories ol {
+    padding-left: 2em;
+}
+
+.courses .courses__categories ol li {
+    line-height: 1.75em;
+    font-weight: 500;
+    text-decoration: none;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/admission.css" />
+    <title>Admission</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="./images/logo.png" alt="geetanjali" />
+      </div>
+      <h1 class="header__title">Geetanjali Club</h1>
+    </header>
+
+    <nav class="nav">
+      <a class="nav__link" href="./index.html">Home</a>
+      <a class="nav__link" href="./courses.html">Courses Offered</a>
+      <a class="nav__link" href="./admission.html">Admission</a>
+      <a class="nav__link" href="./gallery.html">Gallery</a>
+    </nav>
+
+    <section class="admission">
+      <h2 class="admission__title">Admission Form</h2>
+
+      <div class="admission__form">
+        <form action="">
+          <div>
+            <label for="fname">
+              <span>First Name</span>
+              <input type="text" required />
+            </label>
+          </div>
+          <div>
+            <label for="lname">
+              <span>Last Name</span>
+              <input type="text" required />
+            </label>
+          </div>
+          <div>
+            <label for="email">
+              <span>Email Address</span>
+              <input type="email" required />
+            </label>
+          </div>
+          <div>
+            <label for="phone">
+              <span>Phone No.</span>
+              <input type="number" required />
+            </label>
+          </div>
+          <div>
+            <label for="cname">
+              <span>Course Name</span>
+              <input type="text" required />
+            </label>
+          </div>
+          <div class="full">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__address">
+        <p>
+          Chowbaga Rd, Anandapur, <br />
+          Mundapara, <br />
+          Kolkata, West Bengal 700107
+        </p>
+      </div>
+      <div class="footer__contact">
+        <p>
+          Phone: <a href="tel:033 6627 0502">033 6627 0502</a> <br />
+          Website:
+          <a
+            href="https://hbs.edu.in/"
+            target="_blank"
+            referrerpolicy="no-referrer"
+            >https://hbs.edu.in/</a
+          >
+          <br />
+        </p>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      window.addEventListener("load", () => {
+        const formEl = document.querySelector("form");
+        formEl.addEventListener("submit", (ev) => {
+          ev.preventDefault();
+          alert("Thank You for you submission!");
+          formEl.reset();
+        });
+      });
+    </script>
+  </body>
+</html>
