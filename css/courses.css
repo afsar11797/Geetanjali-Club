@@ -34,3 +34,8 @@
     font-weight: 500;
     text-decoration: none;
 }
+
+ol a{
+    color: black;
+    text-decoration: none;
+}
